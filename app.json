@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/order/order",
+        "pages/my/my"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "爱吃吧",
+        "backgroundColor": "#fff",
+        "backgroundTextStyle": "#dark"
+    },
+    "tabBar": {
+        "color": "black",
+        "selectedColor": "#FFC000",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "订餐",
+                "iconPath": "images/icons/index.png",
+                "selectedIconPath": "images/icons/index-a.png"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "text": "订单",
+                "iconPath": "images/icons/order.png",
+                "selectedIconPath": "images/icons/order-a.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/icons/my.png",
+                "selectedIconPath": "images/icons/my-a.png"
+            }
+        ]
+    },
+    "debug": true
+}

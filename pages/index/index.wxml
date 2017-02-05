@@ -1,0 +1,39 @@
+<import src="../common/template" />
+
+<view class="container">
+    <view class="location">
+        <navigator url="../location/location">
+            <view class="location__wrap">
+                <image src=""></image>
+                <text class="location__wrap-text">{{currentNetworkName}}</text>
+                <image src=""></image>
+            </view>
+        </navigator>
+    </view>
+    <view class="bizDate">
+        <view class="bizDate__wrap" wx:for="{{ bizDates }}">
+            <view class="bizDate__wrap-circle"></view>
+            <text class="bizDate__wrap-date"></text>
+        </view>
+    </view>
+</view>
+<scroll-view class="container" scroll-y="true">
+    <swiper class="slides" indicator-dots="true" autoplay="true">
+        <block wx:for="{{ imgUrls }}">
+            <swiper-item>
+                <image src="{{ item }}" ></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="notice">
+
+    </view>
+    <view class="shelf">
+        <block wx:for="{{ goodsInfo }}">
+            <template is="goods"></template>
+        </block>
+    </view>
+</scroll-view>
+<view class="bottom">
+
+</view>
